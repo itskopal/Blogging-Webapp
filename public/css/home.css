@@ -43,11 +43,12 @@ body{
     text-decoration: none;
     text-transform: capitalize;
     color: #044646;
+    transition: color .4s;
 }
 
 .link:hover{
-    background: #044646d1;
-    color: #fff;
+    /* background: #044646d1; */
+    color: #10978a;
     border-radius: 5px;
 }
 
@@ -133,6 +134,31 @@ body{
 }
 .btn.btn.dark:hover{
     background: #044646;
+}
+
+/*=============== SCROLL UP ===============*/
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -30%;
+    background-color: #044646d1;
+    box-shadow: 0 4px 12px hsla(207, 24%, 35%, .15);
+    display: inline-flex;
+    padding: .35rem;
+    border-radius: .25rem;
+    font-size: 1.1rem;
+    color: #fff;
+    z-index: 10;
+    transition: bottom .3s, transform .3s;
+}
+  
+.scrollup:hover{
+    transform: translateY(-.25rem);
+}
+  
+/* Show Scroll Up*/
+.show-scroll{
+    bottom: 3rem;
 }
 
 /* Responsive  */
